@@ -4,73 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vishal Bhatt | CISO & Cybersecurity Strategist</title>
-
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="description" content="Vishal Bhatt — Senior IT Manager, CISO, and Cybersecurity Strategist with 24+ years of leadership in IT, risk management, and cloud transformation." />
-  <meta name="keywords" content="Vishal Bhatt, CISO India, Cybersecurity Strategist, ISO 27001, VAPT Expert, Cloud Security, Data Protection, Gujarat" />
-  <meta name="author" content="Vishal Bhatt" />
-
-  <!-- ✅ Open Graph (for LinkedIn, Facebook) -->
-  <meta property="og:title" content="Vishal Bhatt | Cybersecurity Strategist" />
-  <meta property="og:description" content="24+ years of cybersecurity, IT leadership, and compliance expertise across financial and tech sectors." />
-  <meta property="og:image" content="https://vbsecure360.netlify.app/OG%20IMAGE%203.png" />
-  <meta property="og:url" content="https://vbsecure360.netlify.app/" />
-  <meta property="og:type" content="website" />
-
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Vishal Bhatt | CISO & Cybersecurity Strategist" />
-  <meta name="twitter:description" content="Cybersecurity leader with 24+ years of experience transforming IT governance and compliance." />
-  <meta name="twitter:image" content="https://vbsecure360.netlify.app/OG%20IMAGE%203.png" />
-
-  <!-- ✅ JSON-LD Schema for Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Vishal Bhatt",
-    "jobTitle": "CISO & Cybersecurity Strategist",
-    "url": "https://vbsecure360.netlify.app/",
-    "image": "https://vbsecure360.netlify.app/portrait.jpg",
-    "sameAs": [
-      "https://linkedin.com/in/vishal-bhatt-b0306718",
-      "https://github.com/veby009"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Arman Financial Services Ltd."
-    },
-    "knowsAbout": [
-      "Cybersecurity", "Cloud Strategy", "ISO 27001", "Risk Management", "VAPT"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Anand",
-      "addressRegion": "Gujarat",
-      "addressCountry": "India"
-    }
-  }
-  </script>
-
+  <meta name="description" content="Cybersecurity leader with 24+ years of experience in enterprise IT, risk management, VAPT, and ISO 27001 compliance." />
+  <meta name="keywords" content="CISO India, Cybersecurity Strategist, ISO 27001 Consultant, VAPT Expert, Cloud Security, Data Protection" />
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" xintegrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    /* === Vishal Bhatt Portfolio Styling === */
+    /* === Vishal Bhatt Portfolio Styles === */
+
+    /* Global layout and color palette */
     :root {
-      --bg-color: #4b0000;
-      --accent-gold: #d4af37;
+      --bg-color: #4b0000;           /* Maroon-Red Background */
+      --accent-gold: #d4af37;        /* Golden Highlights */
       --text-light: #f5f5f5;
       --text-muted: #cccccc;
-      --card-bg: rgba(255,255,255,0.05);
-      --card-border: rgba(212,175,55,0.4);
       --heading-font: "Montserrat", sans-serif;
       --body-font: "Open Sans", sans-serif;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(212, 175, 55, 0.4);
     }
 
+    /* === Base Styles === */
     body {
       margin: 0;
       font-family: var(--body-font);
@@ -79,14 +37,28 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-    a { text-decoration: none; color: var(--accent-gold); }
-    a:hover { color: #ffcc00; }
 
-    h1,h2,h3 { font-family: var(--heading-font); color: var(--accent-gold); margin-top: 0; }
+    a {
+      text-decoration: none;
+      color: var(--accent-gold);
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #ffcc00;
+    }
 
-    section { padding: 80px 10%; border-bottom: 1px solid rgba(212,175,55,0.2); }
+    h1, h2, h3 {
+      font-family: var(--heading-font);
+      color: var(--accent-gold);
+      margin-top: 0;
+    }
 
-    /* Buttons */
+    section {
+      padding: 80px 10%;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    /* === Buttons === */
     .btn-primary {
       background-color: var(--accent-gold);
       color: #000;
@@ -94,137 +66,604 @@
       border: none;
       border-radius: 5px;
       font-weight: 700;
-      text-transform: uppercase;
+      display: inline-block;
       cursor: pointer;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
-    .btn-primary:hover { background-color: #ffcc00; transform: translateY(-2px); }
+    .btn-primary:hover {
+      background-color: #ffcc00;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+    }
 
-    /* Header */
+    /* === Header & Navigation === */
     header {
-      position: fixed; top: 0; width: 100%;
-      background: rgba(75,0,0,0.95);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(75, 0, 0, 0.95);
       z-index: 1000;
       padding: 15px 5%;
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
-    .logo { font-size: 1.5rem; font-weight: 700; color: var(--text-light); }
+
+    .logo {
+      font-family: var(--heading-font);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-light);
+    }
     .logo span { color: var(--accent-gold); }
-    nav ul { list-style: none; display: flex; margin: 0; }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
     nav li { margin-left: 25px; }
-    nav a { color: var(--text-light); font-weight: 600; font-size: 0.9rem; }
+    nav a { 
+        color: var(--text-light); 
+        font-weight: 600; 
+        font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--accent-gold); }
 
-    /* Hero Section */
+    /* Mobile Menu Toggle */
+    .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+
+    /* === Hero Section === */
     #hero {
-      height: 100vh; display: flex; align-items: center; justify-content: flex-end;
-      text-align: right; padding: 0 10%; margin-top: 60px; position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; /* Vastu alignment */
+      text-align: right;
+      position: relative;
+      padding: 0 10%;
+      margin-top: 60px; /* Offset fixed header */
+      overflow: hidden;
     }
+
+    /* Video Background */
     #hero video {
-      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-      min-width: 100%; min-height: 100%; z-index: -1; opacity: 0.4;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      opacity: 0.4; /* Dim video for readability */
+      filter: grayscale(30%);
     }
+    
+    /* Overlay gradient for text readability */
     #hero::before {
-      content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      background: linear-gradient(to right, rgba(75,0,0,0.9), rgba(75,0,0,0.4)); z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(to right, rgba(75,0,0,0.9), rgba(75,0,0,0.4));
+        z-index: -1;
     }
 
-    .hero-content { max-width: 700px; }
-    .hero-content h1 { font-size: 3.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+    .hero-content {
+      max-width: 700px;
+      z-index: 1;
+    }
 
-    /* About */
-    #about { background-color: #5c0000; display: flex; align-items: center; gap: 40px; }
-    .about-img img { width: 280px; height: 280px; border-radius: 50%; border: 5px solid var(--accent-gold); object-fit: cover; }
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+        color: var(--text-light);
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
 
-    /* Services */
-    .service-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; margin-top: 40px; }
-    .service { background: var(--card-bg); border: 1px solid var(--card-border); padding: 30px; border-radius: 8px; transition: 0.3s; }
-    .service:hover { transform: translateY(-5px); }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
 
-    /* Certifications */
-    .cert-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 20px; margin-top: 30px; }
-    .cert-card { background: #3b0000; padding: 10px; border-radius: 8px; border: 2px solid var(--accent-gold); transition: 0.3s; }
+    /* === About Section === */
+    #about {
+      background-color: #5c0000;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    .about-img {
+        flex: 1;
+        text-align: center;
+    }
+    .about-img img {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: 5px solid var(--accent-gold);
+        object-fit: cover;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .about-text { flex: 2; }
+
+    /* === Services / Expertise === */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 30px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .service i {
+        font-size: 2.5rem;
+        color: var(--accent-gold);
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    /* === Experience === */
+    .timeline-item {
+      margin-bottom: 30px;
+      padding-left: 20px;
+      border-left: 4px solid var(--accent-gold);
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    .timeline-item h3 { margin-bottom: 5px; }
+    .timeline-item span { 
+        display: block; 
+        font-size: 0.9rem; 
+        color: var(--text-muted); 
+        margin-bottom: 15px; 
+    }
+    .timeline-item ul { padding-left: 20px; margin: 0; }
+
+    /* === Projects === */
+    .project-list {
+        list-style: none;
+        padding: 0;
+    }
+    .project-item {
+        background-color: rgba(212, 175, 55, 0.1);
+        margin-bottom: 15px;
+        padding: 20px;
+        border-radius: 6px;
+        border-left: 5px solid var(--accent-gold);
+    }
+
+    /* === Certifications Gallery === */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .cert-card {
+        background: #3b0000;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid var(--accent-gold);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
     .cert-card:hover { transform: scale(1.03); }
+    
+    .cert-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+    }
+    .cert-title {
+        font-size: 0.85rem;
+        margin-top: 10px;
+        text-align: center;
+        color: var(--text-muted);
+    }
+    
+    /* Lightbox */
+    .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.9);
+        justify-content: center;
+        align-items: center;
+    }
+    .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border: 5px solid var(--accent-gold);
+        border-radius: 4px;
+    }
+    .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+    }
 
-    /* Footer */
-    footer { background-color: #3b0000; text-align: center; padding: 30px; border-top: 3px solid var(--accent-gold); color: var(--text-muted); }
+    /* === Education === */
+    .edu-item {
+        margin-bottom: 20px;
+    }
+
+    /* === Contact === */
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact-form {
+        flex: 1;
+        min-width: 300px;
+    }
+    .contact-info {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      border: 1px solid var(--accent-gold);
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--text-light);
+      font-family: inherit;
+    }
+    input:focus, textarea:focus { outline: none; background-color: rgba(255, 255, 255, 0.2); }
+
+    .social-links a {
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #3b0000;
+      text-align: center;
+      padding: 30px;
+      border-top: 3px solid var(--accent-gold);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* === Responsive === */
+    @media (max-width: 768px) {
+        header { padding: 15px; }
+        .menu-toggle { display: block; color: var(--accent-gold); }
+        nav ul { display: none; flex-direction: column; width: 100%; position: absolute; top: 60px; left: 0; background: rgba(75,0,0,0.95); padding: 20px; text-align: center; }
+        nav ul.active { display: flex; }
+        nav li { margin: 15px 0; }
+        
+        #hero { text-align: center; align-items: center; justify-content: center; }
+        #hero .hero-content { margin-right: 0; }
+        #hero h1 { font-size: 2.5rem; }
+        
+        #about { flex-direction: column; text-align: center; }
+        .about-img { margin-bottom: 20px; }
+    }
   </style>
 </head>
 
 <body>
+  <!-- Navigation -->
   <header>
     <div class="logo">Vishal<span>Bhatt</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     <nav>
-      <ul>
+      <ul id="nav-list">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#portfolio">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section id="hero">
+    <!-- Background Video -->
     <video autoplay muted loop playsinline>
-      <source src="Vishal Bhatt Senior IT Manager Digital Transformation Strategist .mp4" type="video/mp4">
+        <source src="Vishal Bhatt Senior IT Manager Digital Transformation Strategist .mp4" type="video/mp4">
     </video>
+
     <div class="hero-content">
       <h1>Transforming Cybersecurity Into Strategic Business Advantage</h1>
       <h2>Senior IT Manager | CISO | Cybersecurity Strategist</h2>
-      <p>24+ years of leadership in cybersecurity, compliance, and IT governance.</p>
-      <a href="#contact" class="btn-primary">Contact Me</a>
-      <a href="C.V.pdf" target="_blank" style="margin-left:15px; color:#fff;">Download CV</a>
+      <p>
+        Over 24 years of leadership experience building resilient security cultures, ensuring compliance (RBI, SEBI, ISO 27001), and driving digital transformation.
+      </p>
+      <a href="#contact" class="btn-primary">Schedule Consultation</a>
+      <a href="C.V.pdf" target="_blank" style="margin-left: 15px; color: #fff; text-decoration: underline;">Download CV</a>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about">
-    <div class="about-img"><img src="portrait.jpg" alt="Vishal Bhatt Portrait"></div>
-    <div>
+    <div class="about-img">
+        <img src="portrait.jpg" alt="Vishal Bhatt Portrait">
+    </div>
+    <div class="about-text">
       <h2>About Me</h2>
-      <p>As an IT & cybersecurity leader, I drive secure digital transformation aligned with regulatory frameworks like RBI, SEBI, and ISO 27001.</p>
-      <p>My experience spans infrastructure security, cloud migration, and risk governance — ensuring operational excellence with compliance.</p>
+      <p>
+        As a seasoned IT professional, I bring over two decades of experience in cybersecurity, compliance, and IT infrastructure leadership. 
+        I specialize in implementing robust governance frameworks, performing regulatory audits, and leading cloud transformation strategies.
+      </p>
+      <p>
+        My philosophy combines technical expertise with Vastu and Numerology principles to align technology strategies with organizational prosperity and recognition.
+      </p>
+      
+      <!-- Key Stats -->
+      <div style="display: flex; gap: 30px; margin-top: 20px;">
+          <div><h3 style="margin-bottom:0;">24+</h3><span style="color:#ccc;">Years Exp.</span></div>
+          <div><h3 style="margin-bottom:0;">ISO</h3><span style="color:#ccc;">27001 Expert</span></div>
+          <div><h3 style="margin-bottom:0;">VAPT</h3><span style="color:#ccc;">Specialist</span></div>
+      </div>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Services / Expertise -->
   <section id="services">
-    <h2>Expertise & Services</h2>
+    <h2>Expert Cyber Insights</h2>
     <div class="service-grid">
-      <div class="service"><i class="fas fa-shield-alt"></i><h3>Cyber Risk Management</h3></div>
-      <div class="service"><i class="fas fa-bug"></i><h3>VAPT & Ethical Hacking</h3></div>
-      <div class="service"><i class="fas fa-file-contract"></i><h3>Compliance Frameworks</h3></div>
-      <div class="service"><i class="fas fa-cloud"></i><h3>Cloud Security Strategy</h3></div>
+      <div class="service">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Enterprise Risk Management</h3>
+        <p>Comprehensive assessment and mitigation of IT risks aligned with business goals.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-bug"></i>
+        <h3>VAPT & Penetration Testing</h3>
+        <p>Proactive identification and patching of vulnerabilities before they impact operations.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-file-contract"></i>
+        <h3>Compliance & Governance</h3>
+        <p>Seamless achievement of ISO 27001, RBI, SEBI, and DPDP regulatory standards.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Transformation</h3>
+        <p>Secure migration and optimization of cloud infrastructure (AWS/GCP).</p>
+      </div>
     </div>
   </section>
 
-  <!-- Certifications -->
+  <!-- Professional Experience -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    
+    <article class="timeline-item">
+      <h3>Senior IT Manager – Arman Financial Services Ltd.</h3>
+      <span>Jul 2023 – Present</span>
+      <ul>
+        <li>Leading enterprise-wide cybersecurity transformation and compliance with RBI, SEBI, and ISO 27001.</li>
+        <li>Managing DLP, IAM, and cloud governance functions.</li>
+        <li>Training employees on cybersecurity hygiene and phishing prevention.</li>
+      </ul>
+    </article>
+
+    <article class="timeline-item">
+      <h3>IT Manager – Entigrity Pvt. Ltd.</h3>
+      <span>Mar 2021 – Jun 2023</span>
+      <ul>
+        <li>Directed secure hybrid cloud migrations and zero-trust architecture deployments.</li>
+        <li>Reduced vulnerabilities by 40% through VAPT optimization.</li>
+      </ul>
+    </article>
+
+    <article class="timeline-item">
+      <h3>Sr. Coordinator / Technical Trainer – IIHT</h3>
+      <span>Sep 2000 – Jun 2006</span>
+      <ul>
+        <li>Developed technical curricula and conducted training on networking and security.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Key Projects -->
+  <section id="projects">
+    <h2>Key Projects</h2>
+    <ul class="project-list">
+      <li class="project-item"><strong>Rapid ESXi Deployment:</strong> Deployed secure virtualized infrastructure in 7 days.</li>
+      <li class="project-item"><strong>Cloud Server Optimization:</strong> Achieved 25% downtime reduction and 20% performance boost.</li>
+      <li class="project-item"><strong>Advanced Biometric Systems:</strong> Reduced attendance fraud by 30% through iris authentication.</li>
+    </ul>
+  </section>
+
+  <!-- Certifications Gallery -->
   <section id="portfolio">
-    <h2>Certifications</h2>
+    <h2>Portfolio & Certifications</h2>
+    <p style="margin-bottom: 30px;">A collection of my professional credentials and achievements.</p>
+    
     <div class="cert-grid">
-      <div class="cert-card"><img src="cissp-certificate.jpg"><div class="cert-title">CISSP</div></div>
-      <div class="cert-card"><img src="architecting-google-kubernetes.jpg"><div class="cert-title">Google Kubernetes</div></div>
-      <div class="cert-card"><img src="ETHICAL HACKING FOR BEGINNERS.jpg"><div class="cert-title">Ethical Hacking</div></div>
+      <div class="cert-card" onclick="openLightbox('cissp-certificate.jpg')">
+        <img src="cissp-certificate.jpg" alt="CISSP">
+        <div class="cert-title">CISSP</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('architecting-google-kubernetes.jpg')">
+        <img src="architecting-google-kubernetes.jpg" alt="Google Kubernetes">
+        <div class="cert-title">Google Kubernetes</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('ETHICAL HACKING FOR BEGINNERS.jpg')">
+        <img src="ETHICAL HACKING FOR BEGINNERS.jpg" alt="Ethical Hacking">
+        <div class="cert-title">Ethical Hacking</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('INTRO-AI.jpg')">
+        <img src="INTRO-AI.jpg" alt="Intro to AI">
+        <div class="cert-title">Intro to AI</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('CORE-INFRIA STRUCTUR.jpg')">
+        <img src="CORE-INFRIA STRUCTUR.jpg" alt="Core Infrastructure">
+        <div class="cert-title">Core Infrastructure</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('Cyber Hygienes -NCSAM_.jpg')">
+        <img src="Cyber Hygienes -NCSAM_.jpg" alt="Cyber Hygiene">
+        <div class="cert-title">Cyber Hygiene</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('INTRO-CYBERCRIME.jpg')">
+        <img src="INTRO-CYBERCRIME.jpg" alt="Intro to Cybercrime">
+        <div class="cert-title">Intro to Cybercrime</div>
+      </div>
+      <div class="cert-card" onclick="openLightbox('NETWORKING +.jpg')">
+        <img src="NETWORKING +.jpg" alt="Networking+">
+        <div class="cert-title">Networking+</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="Full Certificate">
+  </div>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+        <h3>B.Sc. Physics (Electronics)</h3>
+        <p>R.G. Science College, Gujarat University (2000)</p>
+    </div>
+    <div class="edu-item">
+        <h3>High School Diploma</h3>
+        <p>Saurab High School, Ahmedabad (1997)</p>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mwpppnya" method="POST">
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>Email: <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></p>
+      <p>Phone: +91 94282 19280</p>
+      <p>Location: Anand, Gujarat, India</p>
+      
+      <div class="social-links" style="margin-top: 20px;">
+        <a href="https://linkedin.com/in/vishal-bhatt-b0306718" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/veby009" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <!-- QR Code -->
+      <div style="margin-top: 30px;">
+          <img src="qr.png" alt="Scan for Contact" style="width: 120px; border: 4px solid var(--accent-gold); border-radius: 8px;">
+          <p style="font-size: 0.8rem; margin-top: 5px;">Scan to Connect</p>
+      </div>
+    </div>
+
+    <form id="contact-form">
+      <h3>Send a Message</h3>
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn-primary">Send Message</button>
     </form>
-    <p>Email: <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></p>
-    <p>Location: Anand, Gujarat, India</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Vishal Bhatt | Cybersecurity Strategist</p>
+    <small>Site aligned with Vastu & Numerology principles for success.</small>
   </footer>
+
+  <script>
+    // --- JavaScript Functionality ---
+
+    // 1. Mobile Menu Toggle
+    function toggleMenu() {
+        const nav = document.querySelector('nav ul');
+        nav.classList.toggle('active');
+    }
+
+    // 2. Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            // Close mobile menu if open
+            document.querySelector('nav ul').classList.remove('active');
+            
+            window.scrollTo({
+                top: target.offsetTop - 70, // Adjust for fixed header
+                behavior: "smooth"
+            });
+        }
+      });
+    });
+
+    // 3. Contact Form Handling
+    const form = document.getElementById("contact-form");
+    if (form) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (!name || !email || !message) {
+          alert("Please fill in all fields before sending.");
+          return;
+        }
+        
+        // Success Message (Mock)
+        alert(`Thank you, ${name}! Your message has been received.`);
+        form.reset();
+      });
+    }
+    
+    // 4. Lightbox Functionality
+    function openLightbox(imageSrc) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = imageSrc;
+        lightbox.style.display = 'flex';
+    }
+    
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
