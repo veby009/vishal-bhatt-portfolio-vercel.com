@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vishal Bhatt",
+  "jobTitle": "Cybersecurity, Cloud & Digital Leadership",
+  "email": "mailto:veby009@gmail.com",
+  "telephone": "+91-9428219280",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Anand / Ahmedabad",
+    "addressRegion": "Gujarat",
+    "addressCountry": "India"
+  },
+  "url": "https://YOUR_DOMAIN/",
+  "sameAs": [
+    "https://linkedin.com/in/vishal-bhatt-b0306718",
+    "https://github.com/veby009"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Arman Financial Services Ltd."
+  }
+}
