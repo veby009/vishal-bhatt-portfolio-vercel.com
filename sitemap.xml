@@ -9,11 +9,15 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN/#experience</loc>
+    <loc>https://YOUR_DOMAIN/#expertise</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN/#certs</loc>
+    <loc>https://YOUR_DOMAIN/#certifications</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_DOMAIN/#video</loc>
     <priority>0.8</priority>
   </url>
   <url>
