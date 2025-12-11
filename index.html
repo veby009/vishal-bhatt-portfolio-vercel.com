@@ -1,155 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vishal Bhatt | CISO & Cybersecurity Strategist</title>
-  <meta name="description" content="Cybersecurity leader with 24+ years of experience in enterprise IT, risk management, VAPT, and ISO 27001 compliance." />
-  <meta name="keywords" content="CISO India, Cybersecurity Strategist, ISO 27001 Consultant, VAPT Expert, Cloud Security, Data Protection" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vishal Bhatt | Cybersecurity Strategist</title>
   <link rel="icon" href="assets/img/logos/YAaUOSGUA6I0Wc2T.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Vishal Bhatt — CISO & Cybersecurity Strategist. 24+ years in IT leadership, cloud, SOC, ISO27001, SOC2, and infrastructure." />
 </head>
-<body class="dark">
+<body class="light">
+<nav class="nav" aria-label="Main navigation">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
   <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logos/YAaUOSGUA6I0Wc2T.png" alt="Vishal Bhatt Logo" class="site-logo">
-      Vishal<span>Bhatt</span>
-    </div>
-    <nav>
-      <ul id="nav-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Expertise</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+</nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="section-bg hero-stock-bg"></div>
-    <div class="hero-content">
-      <h1>Transforming Cybersecurity Into Strategic Business Advantage</h1>
-      <h2>Chief Information Security Officer | Digital Transformation Strategist</h2>
-      <p>
-        Over 24 years of leadership experience building resilient security cultures, ensuring compliance (RBI, SEBI, ISO 27001), and driving digital transformation.
-      </p>
-      <a href="#contact" class="btn-primary">Schedule Consultation</a>
-      <a href="assets/docs/Final-C.V.pdf" target="_blank" class="btn-secondary">Download CV</a>
+<header id="hero" class="hero section">
+  <div class="section-bg hero-stock-bg"></div>
+  <video class="hero__video" autoplay muted loop playsinline src="assets/leadership.mp4"></video>
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <div class="photo-vb-wrap">
+      <img class="hero__portrait" src="assets/portrait.jpg" alt="Vishal Bhatt portrait" />
+      <img src="assets/img/logos/1ChatGPT Image Jul 26, 2025, 04_58_53 PM.png" alt="VB Favicon" class="vb-favicon-overlay">
     </div>
-    <div class="hero-img-frame">
-      <div class="photo-vb-wrap">
-        <img src="assets/img/Copilot_20251208_153746.png" alt="Vishal Bhatt Portrait" class="portrait">
-        <img src="assets/img/logos/1ChatGPT Image Jul 26, 2025, 04_58_53 PM.png" alt="VB Favicon" class="vb-favicon-overlay">
-      </div>
+    <h1 class="hero__title">Vishal Bhatt</h1>
+    <p class="hero__tagline">CISO & Cybersecurity Strategist — Secure-by-design infrastructure, SOC analytics, and AI for threat detection</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="#contact">Get in touch</a>
+      <a class="btn" href="assets/final3.pdf" download>Download Resume</a>
     </div>
-    <video class="hero-video-bg" autoplay muted loop playsinline>
-      <source src="assets/media/Vishal Bhatt Senior IT Manager Digital Transformation Strategist .mp4" type="video/mp4">
-    </video>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="section-bg about-bg"></div>
-    <h2>About Me</h2>
-    <div class="about-content">
-      <p>
-        Seasoned IT professional with exceptional leadership and project management skills. Specialized in IT Infra and Security planning and implementation. Results-focused, with 24 years of proven success in developing and leading cross-functional technical teams to execute and deliver major technology initiatives.
-      </p>
-      <div class="stats">
-        <div><h3>24+</h3><span>Years Exp.</span></div>
-        <div><h3>ISO</h3><span>27001 Expert</span></div>
-        <div><h3>VAPT</h3><span>Specialist</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services / Expertise -->
-  <section id="services">
-    <div class="section-bg services-bg"></div>
-    <h2>Expert Cyber Insights</h2>
-    <div class="service-grid">
-      <div class="service">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Enterprise Risk Management</h3>
-        <p>Comprehensive assessment and mitigation of IT risks aligned with business goals.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-bug"></i>
-        <h3>VAPT & Penetration Testing</h3>
-        <p>Proactive identification and patching of vulnerabilities before they impact operations.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-file-contract"></i>
-        <h3>Compliance & Governance</h3>
-        <p>Seamless achievement of ISO 27001, RBI, SEBI, and DPDP regulatory standards.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-cloud"></i>
-        <h3>Cloud Transformation</h3>
-        <p>Secure migration and optimization of cloud infrastructure (AWS/GCP).</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Professional Experience -->
-  <section id="experience">
-    <div class="section-bg experience-bg"></div>
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-      <!-- Paste all timeline-item blocks from your CV here -->
-      <!-- ... -->
-    </div>
-  </section>
-
-  <!-- Certifications Gallery -->
-  <section id="certifications">
-    <div class="section-bg certifications-bg"></div>
-    <h2>Certifications & Continuous Learning</h2>
-    <div class="cert-grid">
-      <!-- Paste all cert-card blocks from your CV here -->
-      <!-- ... -->
-    </div>
-  </section>
-
-  <!-- Lightbox Container -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="lightbox-close" id="closeLightbox">&times;</span>
-    <img id="lightboxImage" src="" alt="Full Certificate">
   </div>
+</header>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="section-bg contact-bg"></div>
-    <div class="contact-info">
-      <h3>Contact Information</h3>
-      <p>Email: <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></p>
-      <p>Phone: +91 94282 19280</p>
-      <p>Location: Anand, Gujarat, India</p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/vishal-bhatt-b0306718" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/veby009" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
+<main>
+<section id="about" class="section section--glass container">
+  <div class="section-bg about-bg"></div>
+  <h2>About</h2>
+  <p><strong>Senior IT Manager & Cybersecurity Architect</strong> with 24+ years of enterprise experience across cloud, compliance (ISO27001, SOC2), and infrastructure strategy. I build proactive SOC capabilities using ML and automation to reduce risk and accelerate digital transformation.</p>
+  <ul class="bullets">
+    <li><strong>Focus:</strong> Cyber Threat Detection; Infrastructure Automation; AI for Security</li>
+    <li><strong>Tools:</strong> Python, Keras, SIEM, VMware, AzureAD, Microsoft Intune</li>
+    <li><strong>Location:</strong> Ahmedabad, India • <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></li>
+  </ul>
+</section>
+
+<section id="projects" class="section container">
+  <div class="section-bg projects-bg"></div>
+  <h2>Selected Projects</h2>
+  <div class="card grid">
+    <article>
+      <h3>Anomaly Detection in Enterprise Network Traffic</h3>
+      <p>Machine learning and deep learning pipelines using UNSW-NB15 for unsupervised threat hunting (Isolation Forest, AutoEncoder).</p>
+      <p><strong>Highlights:</strong> Data exploration, unsupervised detection, deep autoencoder, visualization, and future Streamlit dashboard.</p>
+      <a class="btn" href="#experience">Read experience</a>
+    </article>
+    <article>
+      <h3>Security Automation & Monitoring</h3>
+      <p>Infrastructure monitoring, alerting pipelines, and automation scripts (Python, Bash) to reduce mean time to detect and respond.</p>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section section--dark container">
+  <div class="section-bg experience-bg"></div>
+  <h2>Professional Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>SR.IT.MANAGER, 07/2023 - Current</h3>
+      <span>Arman Financial Services Limited, Ahmedabad, IN</span>
+      <ul>
+        <li>Coordinated disaster recovery plans to minimize downtime during system outages or malfunctions.</li>
+        <li>Created detailed documentation for software, hardware, and network configurations.</li>
+        <li>Worked closely with vendors to negotiate contracts and select appropriate products or services.</li>
+        <li>Monitored system performance and identified areas for improvement.</li>
+        <li>Developed and implemented IT policies and procedures to ensure compliance with industry standards.</li>
+        <li>Established security protocols to protect data from unauthorized access or modification.</li>
+        <li>Ensured all components are compatible with existing systems prior to implementation.</li>
+        <li>Identified opportunities for cost savings through improved efficiency in IT processes.</li>
+        <li>Implemented strategies for improving customer service levels through enhanced use of technology.</li>
+        <li>Evaluated emerging trends in information technology to recommend upgrades or improvements.</li>
+        <li>Resolved conflicts between different stakeholders regarding IT projects.</li>
+        <li>Analyzed user needs and developed specifications for new systems or modifications.</li>
+        <li>Provided technical support to end-users on a variety of issues.</li>
+        <li>Maintained up-to-date knowledge of relevant technologies and equipment used in the organization.</li>
+        <li>Oversaw the development of databases, websites, intranets, extranets, and mobile applications.</li>
+        <li>Assessed current infrastructure capabilities against future requirements.</li>
+        <li>Conducted research to identify new technologies that could improve operations.</li>
+        <li>Trained staff members on various aspects of computer usage and software applications.</li>
+        <li>Performed regular system audits to identify potential risks or vulnerabilities.</li>
+        <li>Managed the installation, configuration, maintenance, and troubleshooting of network systems.</li>
+        <li>Supervised lifecycle processes pertaining to IT framework.</li>
+        <li>Developed and maintained processes and technology roadmap to achieve business objectives.</li>
+        <li>Maintained strong knowledge of applicable regulations to guarantee that designs, operations and IT systems met those requirements.</li>
+        <li>Developed and implemented system lifecycle methodologies to produce systems of high quality.</li>
+        <li>Recommended hardware and software acquisitions to help users assess needs and justify equipment and services.</li>
+        <li>Maintained close connection with project personnel to quickly identify and resolve problems.</li>
+        <li>Supervised and oriented computer operator trainees, both onsite and remotely via internet and intranet, promoting full staffing with trained and knowledgeable employees.</li>
+      </ul>
     </div>
-    <form id="contact-form">
-      <h3>Send a Message</h3>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
+    <div class="timeline-item">
+      <h3>IT MANAGER, 03/2021 - 06/2023</h3>
+      <span>Entigrity Pvt. Ltd, Ahmedabad, IN</span>
+      <ul>
+        <li>Controlled IT budgets and expenditures, ensuring operational efficiency.</li>
+        <li>Managed backup, user accounts, and helpdesk systems.</li>
+        <li>Developed IT lifecycle methodologies to deliver high-quality systems.</li>
+        <li>Recommended hardware/software acquisitions to align with business needs.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>IT MANAGER, 10/2018 - 09/2021</h3>
+      <span>KomalTex Fab Pvt.Ltd, Ahmedabad, IN</span>
+      <ul>
+        <li>Implemented IT policies and compliance frameworks.</li>
+        <li>Coordinated DR plans and performed regular system audits.</li>
+        <li>Established security protocols and optimized infrastructure capabilities.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>SR TECHNICAL HEAD, 04/2017 - 10/2018</h3>
+      <span>IIHT Ltd (Dave Associate), Ahmedabad, IN</span>
+      <ul>
+        <li>Collaborated with other departments to ensure integration between different components of the system.</li>
+        <li>Defined strategies for continuous improvement initiatives that involved automation of manual processes.</li>
+        <li>Trained new hires on company policies, procedures, processes and tools related to software development life cycle.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>SR TECHNICAL HEAD / CO-ORDINATOR, 01/2014 - 04/2017</h3>
+      <span>Jetking InfoTrain Ltd, Ahmedabad, IN</span>
+      <ul>
+        <li>Technical and infra development management, students and staff training, upgrading to staff and helping in their technical development, handled placements, maintained servers, ERP, and technical fairs.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>SR TECHNICAL FACULTY, 12/2010 - 12/2013</h3>
+      <span>Jetking InfoTrain Ltd (AAROHI), Vadodara, IN</span>
+      <ul>
+        <li>Trained students, maintained systems and labs, hired and trained staff, planned and implemented Quality Management System.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>SR TECHNICAL FACULTY, 06/2008 - 11/2010</h3>
+      <span>JETKING INFO TRAIN LTD (MIET), Ahmedabad/Anand, IN</span>
+      <ul>
+        <li>Trained students, maintained systems and labs, coordinated lab work, maintenance, troubleshooting, etc.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>SR.TECHNICAL FACULTY/COURSE CO-ORDINATOR, 06/2006 - 04/2007</h3>
+      <span>ECIT-ECIL (Niche-Solution), Ahmedabad, IN</span>
+      <ul>
+        <li>Trained students, maintained systems and labs, developed courses, tracked batches, and ensured content delivery.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>SR.CO-ODINATOR/TECHNICAL TRAINER, 03/2000 - 06/2006</h3>
+      <span>IIHT (HO-Ahmedabad), Ahmedabad, IN</span>
+      <ul>
+        <li>Oversaw training programs, managed resources, stakeholder communication, performance monitoring, curriculum development, and instruction delivery.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>TECHNICAL FACULTY, 04/2007 - 09/2008</h3>
+      <span>IIHT Ltd. (Prakshal), Ahmedabad, IN</span>
+      <ul>
+        <li>Trained and supervised students, maintained records, conducted batches, organized meetings, ensured adherence to industry standards.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="section-bg certifications-bg"></div>
+  <h2>Certifications & Continuous Learning</h2>
+  <div class="cert-grid">
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/cissp-certificate.jpg')">
+      <img src="assets/img/certificates/cissp-certificate.jpg" alt="CISSP Certificate">
+      <div class="cert-title">CISSP</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/Cyber Hygienes -NCSAM.jpg')">
+      <img src="assets/img/certificates/Cyber Hygienes -NCSAM.jpg" alt="Cyber Hygiene">
+      <div class="cert-title">Cyber Hygiene</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/architecting-google-kubernetes.jpg')">
+      <img src="assets/img/certificates/architecting-google-kubernetes.jpg" alt="Google Kubernetes">
+      <div class="cert-title">Google Kubernetes</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/CORE-INFRIA STRUCTUR.jpg')">
+      <img src="assets/img/certificates/CORE-INFRIA STRUCTUR.jpg" alt="Core Infrastructure">
+      <div class="cert-title">Core Infrastructure</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/ETHICAL HACKING FOR BEGINNERS.jpg')">
+      <img src="assets/img/certificates/ETHICAL HACKING FOR BEGINNERS.jpg" alt="Ethical Hacking">
+      <div class="cert-title">Ethical Hacking</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/INTRO-AI.jpg')">
+      <img src="assets/img/certificates/INTRO-AI.jpg" alt="Intro to AI">
+      <div class="cert-title">Intro to AI</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/INTRO-CYBERCRIME.jpg')">
+      <img src="assets/img/certificates/INTRO-CYBERCRIME.jpg" alt="Intro to Cybercrime">
+      <div class="cert-title">Intro to Cybercrime</div>
+    </div>
+    <div class="cert-card" onclick="openLightbox('assets/img/certificates/NETWORKING.jpg')">
+      <img src="assets/img/certificates/NETWORKING.jpg" alt="Networking+">
+      <div class="cert-title">Networking+</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section--glass container">
+  <div class="section-bg contact-bg"></div>
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>
+      <p><strong>Email</strong> <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></p>
+      <p><strong>Phone</strong> +91 94282 19280</p>
+      <p><strong>Location</strong> Anand / Ahmedabad, Gujarat, India</p>
+      <p><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/vishal-bhatt-b0306718" target="_blank" rel="noopener">vishal-bhatt</a></p>
+    </div>
+    <form id="contact-form" class="form" action="#" method="post" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn btn--gold">Send Message</button>
+      <p class="form__note">I typically respond within 48 hours.</p>
     </form>
-  </section>
+  </div>
+</section>
+</main>
 
-  <footer>
-    <p>© 2025 Vishal Bhatt | Cybersecurity Strategist</p>
-    <small>Site aligned with Vastu & Numerology principles for success.</small>
-  </footer>
+<footer class="footer">
+  <p>© 2025 Vishal Bhatt • Built for cybersecurity leadership and portfolio showcase</p>
+</footer>
 
-  <script src="assets/js/script.js"></script>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="closeLightbox" class="lightbox__close" aria-label="Close">✕</button>
+  <img id="lightboxImage" src="" alt="Certificate preview" />
+</div>
+
+<script src="scripts/theme-and-ui.js"></script>
 </body>
 </html>
