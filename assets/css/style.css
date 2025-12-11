@@ -26,12 +26,6 @@ body.light {
   background: #fff;
   color: #1f2937;
 }
-section {
-  background: rgba(75,0,0,0.97);
-  border-radius: 18px;
-  margin: 32px 0;
-  box-shadow: 0 2px 24px 0 #000;
-}
 
 .theme-toggle {
   position: fixed;
@@ -46,7 +40,7 @@ section {
   height: 44px;
   font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0 12px 4px #ffd700;
   transition: background 0.3s;
 }
 
@@ -68,8 +62,16 @@ header {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .logo span { color: var(--gold); }
+.site-logo {
+  height: 48px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 8px #ffd700) drop-shadow(0 0 16px #ffd700);
+}
 
 nav ul {
   list-style: none;
@@ -90,7 +92,10 @@ nav a:hover { color: var(--gold); }
 section {
   padding: 60px 10%;
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-  background: transparent;
+  background: rgba(75,0,0,0.97);
+  border-radius: 18px;
+  margin: 32px 0;
+  box-shadow: 0 2px 24px 0 #000;
 }
 
 #hero {
@@ -102,9 +107,12 @@ section {
   background: linear-gradient(120deg, var(--maroon) 70%, var(--gold) 100%);
   border-radius: 0 0 40px 40px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
 }
 .hero-content {
   max-width: 600px;
+  z-index: 2;
 }
 .hero-content h1 {
   font-size: 2.5rem;
@@ -128,6 +136,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .portrait {
   width: 160px;
@@ -135,7 +144,16 @@ section {
   border-radius: 50%;
   object-fit: cover;
 }
-
+.hero-video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.25;
+  filter: grayscale(30%) blur(1px);
+  pointer-events: none;
+}
 
 .btn-primary, .btn-secondary {
   display: inline-block;
@@ -154,6 +172,7 @@ section {
   background: var(--gold);
   color: #000;
   border: none;
+  box-shadow: 0 0 12px 2px #ffd700;
 }
 .btn-primary:hover {
   background: var(--gold-light);
@@ -252,25 +271,25 @@ section {
 .cert-card {
   background: #2a0000;
   border: 3px solid #d4af37;
-  box-shadow: 0 0 18px 2px #d4af37, 0 2px 16px 0 #000;
-  border-radius: 12px;
-  padding: 12px;
+  box-shadow: 0 0 24px 8px #ffd700, 0 2px 24px 0 #000;
+  border-radius: 16px;
+  padding: 16px;
   transition: box-shadow 0.3s, transform 0.3s;
   text-align: center;
 }
 .cert-card:hover {
-  box-shadow: 0 0 32px 8px #ffcc00, 0 2px 24px 0 #000;
-  transform: scale(1.05);
+  box-shadow: 0 0 48px 16px #ffcc00, 0 2px 32px 0 #000;
+  transform: scale(1.07);
 }
 .cert-card img {
   width: 100%;
   height: 120px;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 8px;
   background: #fff;
-  border: 2px solid #d4af37;
+  border: 2px solid #ffd700;
   margin-bottom: 8px;
-  box-shadow: 0 0 12px 2px #d4af37;
+  box-shadow: 0 0 24px 4px #ffd700;
 }
 .cert-title {
   color: #ffd700;
@@ -386,4 +405,3 @@ footer {
     gap: 20px;
   }
 }
-
