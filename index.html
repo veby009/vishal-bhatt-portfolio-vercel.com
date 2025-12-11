@@ -1,160 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vishal Bhatt | CISO & Cybersecurity Strategist</title>
-  <meta name="description" content="Cybersecurity leader with 24+ years of experience in enterprise IT, risk management, VAPT, and ISO 27001 compliance." />
-  <meta name="keywords" content="CISO India, Cybersecurity Strategist, ISO 27001 Consultant, VAPT Expert, Cloud Security, Data Protection" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vishal Bhatt | Cybersecurity Strategist</title>
   <link rel="icon" href="assets/img/logos/YAaUOSGUA6I0Wc2T.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Vishal Bhatt — CISO & Cybersecurity Strategist. 24+ years in IT leadership, cloud, SOC, ISO27001, SOC2, and infrastructure." />
 </head>
-<body class="dark">
-  <!-- Theme Toggle -->
+<body class="light">
+<nav class="nav" aria-label="Main navigation">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certs">Certifications</a>
+  <a href="#contact">Contact</a>
   <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+</nav>
 
-  <!-- Header with Logo -->
-  <header>
-    <div class="logo">
-      <img src="assets/img/logos/YAaUOSGUA6I0Wc2T.png" alt="Vishal Bhatt Logo" class="site-logo">
-      Vishal<span>Bhatt</span>
+<header id="hero" class="hero section">
+  <div class="section-bg hero-stock-bg"></div>
+  <video class="hero__video" autoplay muted loop playsinline src="assets/leadership.mp4"></video>
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <div class="photo-vb-wrap">
+      <img class="hero__portrait" src="assets/portrait.jpg" alt="Vishal Bhatt portrait" />
+      <img src="assets/img/logos/1ChatGPT Image Jul 26, 2025, 04_58_53 PM.png" alt="VB Favicon" class="vb-favicon-overlay">
     </div>
-    <nav>
-      <ul id="nav-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Expertise</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section with Video, Stock Background, and Photo+VB Overlay -->
-  <section id="hero">
-    <div class="section-bg hero-stock-bg"></div>
-    <div class="hero-content">
-      <h1>Transforming Cybersecurity Into Strategic Business Advantage</h1>
-      <h2>Chief Information Security Officer | Digital Transformation Strategist</h2>
-      <p>
-        Over 24 years of leadership experience building resilient security cultures, ensuring compliance (RBI, SEBI, ISO 27001), and driving digital transformation.
-      </p>
-      <a href="#contact" class="btn-primary">Schedule Consultation</a>
-      <a href="assets/docs/Final-C.V.pdf" target="_blank" class="btn-secondary">Download CV</a>
+    <h1 class="hero__title">Vishal Bhatt</h1>
+    <p class="hero__tagline">CISO & Cybersecurity Strategist — Secure-by-design infrastructure, SOC analytics, and AI for threat detection</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="#contact">Get in touch</a>
+      <a class="btn" href="assets/final3.pdf" download>Download Resume</a>
     </div>
-    <div class="hero-img-frame">
-      <div class="photo-vb-wrap">
-        <img src="assets/img/Copilot_20251208_153746.png" alt="Vishal Bhatt Portrait" class="portrait">
-        <img src="assets/img/logos/1ChatGPT Image Jul 26, 2025, 04_58_53 PM.png" alt="VB Favicon" class="vb-favicon-overlay">
-      </div>
-    </div>
-    <video class="hero-video-bg" autoplay muted loop playsinline>
-      <source src="assets/media/Vishal Bhatt Senior IT Manager Digital Transformation Strategist .mp4" type="video/mp4">
-    </video>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="section-bg about-bg"></div>
-    <h2>About Me</h2>
-    <div class="about-content">
-      <p>
-        Seasoned IT professional with exceptional leadership and project management skills. Specialized in IT Infra and Security planning and implementation. Results-focused, with 24 years of proven success in developing and leading cross-functional technical teams to execute and deliver major technology initiatives.
-      </p>
-      <div class="stats">
-        <div><h3>24+</h3><span>Years Exp.</span></div>
-        <div><h3>ISO</h3><span>27001 Expert</span></div>
-        <div><h3>VAPT</h3><span>Specialist</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services / Expertise -->
-  <section id="services">
-    <div class="section-bg services-bg"></div>
-    <h2>Expert Cyber Insights</h2>
-    <div class="service-grid">
-      <div class="service">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Enterprise Risk Management</h3>
-        <p>Comprehensive assessment and mitigation of IT risks aligned with business goals.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-bug"></i>
-        <h3>VAPT & Penetration Testing</h3>
-        <p>Proactive identification and patching of vulnerabilities before they impact operations.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-file-contract"></i>
-        <h3>Compliance & Governance</h3>
-        <p>Seamless achievement of ISO 27001, RBI, SEBI, and DPDP regulatory standards.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-cloud"></i>
-        <h3>Cloud Transformation</h3>
-        <p>Secure migration and optimization of cloud infrastructure (AWS/GCP).</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Professional Experience -->
-  <section id="experience">
-    <div class="section-bg experience-bg"></div>
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-      <!-- Paste all timeline-item blocks from your CV here -->
-      <!-- ... -->
-    </div>
-  </section>
-
-  <!-- Certifications Gallery -->
-  <section id="certifications">
-    <div class="section-bg certifications-bg"></div>
-    <h2>Certifications & Continuous Learning</h2>
-    <div class="cert-grid">
-      <!-- Paste all cert-card blocks from your CV here -->
-      <!-- ... -->
-    </div>
-  </section>
-
-  <!-- Lightbox Container -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="lightbox-close" id="closeLightbox">&times;</span>
-    <img id="lightboxImage" src="" alt="Full Certificate">
   </div>
+</header>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="section-bg contact-bg"></div>
-    <div class="contact-info">
-      <h3>Contact Information</h3>
-      <p>Email: <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></p>
-      <p>Phone: +91 94282 19280</p>
-      <p>Location: Anand, Gujarat, India</p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/vishal-bhatt-b0306718" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/veby009" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
+<main>
+<section id="about" class="section section--glass container">
+  <div class="section-bg about-bg"></div>
+  <h2>About</h2>
+  <p><strong>Senior IT Manager & Cybersecurity Architect</strong> with 24+ years of enterprise experience across cloud, compliance (ISO27001, SOC2), and infrastructure strategy. I build proactive SOC capabilities using ML and automation to reduce risk and accelerate digital transformation.</p>
+  <ul class="bullets">
+    <li><strong>Focus:</strong> Cyber Threat Detection; Infrastructure Automation; AI for Security</li>
+    <li><strong>Tools:</strong> Python, Keras, SIEM, VMware, AzureAD, Microsoft Intune</li>
+    <li><strong>Location:</strong> Ahmedabad, India • <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></li>
+  </ul>
+</section>
+
+<section id="projects" class="section container">
+  <div class="section-bg projects-bg"></div>
+  <h2>Selected Projects</h2>
+  <div class="card grid">
+    <article>
+      <h3>Anomaly Detection in Enterprise Network Traffic</h3>
+      <p>Machine learning and deep learning pipelines using UNSW-NB15 for unsupervised threat hunting (Isolation Forest, AutoEncoder).</p>
+      <p><strong>Highlights:</strong> Data exploration, unsupervised detection, deep autoencoder, visualization, and future Streamlit dashboard.</p>
+      <a class="btn" href="#experience">Read experience</a>
+    </article>
+    <article>
+      <h3>Security Automation & Monitoring</h3>
+      <p>Infrastructure monitoring, alerting pipelines, and automation scripts (Python, Bash) to reduce mean time to detect and respond.</p>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section section--dark container">
+  <div class="section-bg experience-bg"></div>
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="card">
+      <div class="meta">SR.IT.MANAGER — Arman Financial Services Limited • 07/2023 - Current</div>
+      <ul>
+        <li>Led DR planning, security protocols, and compliance initiatives.</li>
+        <li>Implemented lifecycle methodologies and vendor management.</li>
+      </ul>
     </div>
-    <form id="contact-form">
-      <h3>Send a Message</h3>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
+    <div class="card">
+      <div class="meta">IT MANAGER — Entigrity Pvt. Ltd • 03/2021 - 06/2023</div>
+      <ul>
+        <li>Modernized infrastructure, backups, and helpdesk systems; optimized costs.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="meta">Senior roles in training and technical leadership (2000–2021)</div>
+      <ul>
+        <li>Technical training, infra management, and process improvements across multiple organizations.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certs" class="section container">
+  <div class="section-bg certs-bg"></div>
+  <h2>Certifications</h2>
+  <div id="gallery" class="gallery grid">
+    <img src="assets/certificates/cissp-certificate.jpg" alt="CISSP certificate" loading="lazy" />
+    <img src="assets/certificates/ETHICAL HACKING FOR BEGINNERS.jpg" alt="Ethical Hacking" loading="lazy" />
+    <img src="assets/certificates/INTRO-AI.jpg" alt="Intro to AI" loading="lazy" />
+    <img src="assets/certificates/INTRO-CYBERCRIME.jpg" alt="Intro to Cybercrime" loading="lazy" />
+    <img src="assets/certificates/Cyber Hygienes -NCSAM.jpg" alt="Cyber Hygiene" loading="lazy" />
+    <img src="assets/certificates/CORE-INFRIA STRUCTUR.jpg" alt="Core Infrastructure" loading="lazy" />
+    <img src="assets/certificates/NETWORKING.jpg" alt="Networking" loading="lazy" />
+  </div>
+</section>
+
+<section id="media" class="section container">
+  <div class="section-bg media-bg"></div>
+  <h2>Media</h2>
+  <div class="card">
+    <h3>Leadership & Strategy</h3>
+    <video controls width="100%" src="assets/leadership.mp4">Your browser does not support the video tag.</video>
+  </div>
+</section>
+
+<section id="contact" class="section section--glass container">
+  <div class="section-bg contact-bg"></div>
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>
+      <p><strong>Email</strong> <a href="mailto:veby009@gmail.com">veby009@gmail.com</a></p>
+      <p><strong>Phone</strong> +91 94282 19280</p>
+      <p><strong>Location</strong> Anand / Ahmedabad, Gujarat, India</p>
+      <p><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/vishal-bhatt-b0306718" target="_blank" rel="noopener">vishal-bhatt</a></p>
+    </div>
+    <form id="contact-form" class="form" action="#" method="post" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn btn--gold">Send Message</button>
+      <p class="form__note">I typically respond within 48 hours.</p>
     </form>
-  </section>
+  </div>
+</section>
+</main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Vishal Bhatt | Cybersecurity Strategist</p>
-    <small>Site aligned with Vastu & Numerology principles for success.</small>
-  </footer>
+<footer class="footer">
+  <p>© 2025 Vishal Bhatt • Built for cybersecurity leadership and portfolio showcase</p>
+</footer>
 
-  <!-- JS -->
-  <script src="assets/js/script.js"></script>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="closeLightbox" class="lightbox__close" aria-label="Close">✕</button>
+  <img id="lightboxImage" src="" alt="Certificate preview" />
+</div>
+
+<script src="scripts/theme-and-ui.js"></script>
 </body>
 </html>
