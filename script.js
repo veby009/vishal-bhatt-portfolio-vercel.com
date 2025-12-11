@@ -1,73 +1,75 @@
-// Smooth scroll
-document.querySelectorAll('.nav a').forEach(a=>{
-  a.addEventListener('click',e=>{
-    e.preventDefault();
-    const id=a.getAttribute('href');
-    document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
-  });
-});
+// Theme Toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+  const toggleBtn = document.querySelector(".theme-toggle");
 
-// Reveal animations on scroll
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){ e.target.classList.add('reveal-in'); }
-  });
-},{threshold:0.15});
-document.querySelectorAll('.reveal,.card').forEach(el=>observer.observe(el));
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    body.classList.remove("light", "dark");
+    body.classList.add(savedTheme);
+    toggleBtn.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+  } else {
+    body.classList.add("light"); // default theme
+    toggleBtn.textContent = "🌙";
+  }
 
-// Gallery setup — update filenames if needed
-const gallery=document.getElementById('gallery');
-const certs=[
-  'assets/certificates/cissp-certificate.jpg',
-  'assets/certificates/architecting-google-kubernetes.jpg',
-  'assets/certificates/ethical-hacking.jpg',
-  'assets/certificates/intro-ai.jpg',
-  'assets/certificates/intro-cybercrime.jpg',
-  'assets/certificates/cyber-hygiene.jpg',
-  'assets/certificates/core-infra.jpg',
-  'assets/certificates/networking.jpg'
-];
-
-certs.forEach(src=>{
-  const img=document.createElement('img');
-  img.src=src;
-  img.alt='Certificate';
-  img.loading='lazy';
-  gallery.appendChild(img);
-  img.addEventListener('click',()=>openLightbox(src));
-});
-
-// Lightbox
-const lightbox=document.getElementById('lightbox');
-const lightboxImg=document.getElementById('lightboxImg');
-const closeBtn=document.querySelector('.lightbox__close');
-
-function openLightbox(src){
-  lightboxImg.src=src;
-  lightbox.classList.add('open');
-  lightbox.setAttribute('aria-hidden','false');
-}
-closeBtn.addEventListener('click',()=>{
-  lightbox.classList.remove('open');
-  lightbox.setAttribute('aria-hidden','true');
-});
-lightbox.addEventListener('click',e=>{
-  if(e.target===lightbox){ closeBtn.click(); }
-});
-
-// Contact form status (Formspree)
-const form=document.getElementById('contactForm');
-if(form){
-  form.addEventListener('submit',async(e)=>{
-    const btn=form.querySelector('button[type="submit"]');
-    btn.disabled=true; btn.textContent='Sending...';
-    try{
-      // Let browser submit normally to Formspree
-      // Optional: AJAX post then show success
-      setTimeout(()=>{ btn.textContent='Sent!'; },900);
-    }catch(err){
-      btn.disabled=false; btn.textContent='Send';
-      alert('Something went wrong. Please try again.');
+  // Toggle theme on click
+  toggleBtn.addEventListener("click", () => {
+    if (body.classList.contains("light")) {
+      body.classList.replace("light", "dark");
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    } else {
+      body.classList.replace("dark", "light");
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
     }
+  });
+});
+
+// Certificate Lightbox
+function openLightbox(src) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightboxImage");
+  if (lightbox && lightboxImage) {
+    lightbox.style.display = "flex";
+    lightboxImage.src = src;
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.setAttribute("tabindex", "-1");
+  }
+}
+const closeLightboxBtn = document.getElementById("closeLightbox");
+const lightbox = document.getElementById("lightbox");
+if (closeLightboxBtn && lightbox) {
+  closeLightboxBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.style.display = "none";
+    }
+  });
+}
+
+// Contact Form (Mock)
+const form = document.getElementById("contact-form");
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before sending.");
+      return;
+    }
+    alert(`Thank you, ${name}! Your message has been received.`);
+    form.reset();
   });
 }
