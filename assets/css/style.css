@@ -152,11 +152,44 @@ section {
   transition: opacity 0.4s;
   box-shadow: 0 0 60px 10px #d4af37;
 }
+.photo-vb-wrap {
+  position: relative;
+  display: inline-block;
+}
 .portrait {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 0 32px 8px #d4af37;
+}
+.vb-favicon-overlay {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 18px 6px #ffd700;
+  z-index: 2;
+  padding: 2px;
+}
+
+.hero-stock-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 0 0 40px 40px;
+  transition: opacity 0.4s;
+  box-shadow: 0 0 60px 10px #d4af37;
 }
 .hero-video-bg {
   position: absolute;
@@ -419,4 +452,5 @@ footer {
     gap: 20px;
   }
 }
+
 
