@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://YOUR_DOMAIN/</loc>
+    <loc>https://vb-secure-portfolio.vercel.app/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN/#about</loc>
+    <loc>https://vb-secure-portfolio.vercel.app/#about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN/#expertise</loc>
+    <loc>https://vb-secure-portfolio.vercel.app/#expertise</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN/#certifications</loc>
-    <priority>0.8</priority>
+    <loc>https://vb-secure-portfolio.vercel.app/#certifications</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN/#video</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN/#contact</loc>
-    <priority>0.8</priority>
+    <loc>https://vb-secure-portfolio.vercel.app/#contact</loc>
+    <priority>0.7</priority>
   </url>
 </urlset>
