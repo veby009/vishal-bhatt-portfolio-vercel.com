@@ -43,3 +43,72 @@ A recruiter-ready, SEO-optimized, corporate-modern portfolio with hero video, ce
 - Submit your domain and sitemap to Google Search Console.
 - Add the site link to your LinkedIn and email signature.
 - Keep titles and descriptions concise and keyword-rich.
+  
+# VISHAL BHATT'S Portfolio — Vishal Bhatt
+
+Official professional portfolio of **Vishal Bhatt**,  
+CISO & Digital Transformation Strategist with 24+ years of experience in IT Governance, Cybersecurity, and Infrastructure Leadership.
+
+---
+
+## 🌐 Live Website
+**[https://vb-secure-portfolio.vercel.app](https://vb-secure-portfolio.vercel.app)**
+
+---
+
+## 📁 Project Structure
+
+vishal bhatt-portfolio-v2/
+│
+├── index.html
+├── style.css
+├── script.js
+├── manifest.json
+├── robots.txt
+├── sitemap.xml
+├── README.md
+│
+└── assets/
+├── VB-shield-favicon.png
+├── portrait.jpg
+├── qr.png
+├── og-image.png
+├── Final-C.V.pdf
+├── Vishal Bhatt Senior IT Manager Digital Transformation Strategist .mp4
+└── certificates/
+├── cissp-certificate.jpg
+├── INTRO-AI.jpg
+├── Cyber Hygienes -NCSAM_.jpg
+├── CORE-INFRIA STRUCTUR.jpg
+└── ...
+
+
+---
+
+## ⚙️ Features
+- 🎥 Cinematic autoplay hero video with sound toggle  
+- 🛡️ Glowing VB Shield favicon & maroon–gold theme  
+- 📜 SEO & JSON-LD optimized for Google  
+- 🧠 Integrated Formspree contact form  
+- 💫 Smooth scroll, fade animations, and scroll-to-top  
+- 🏅 Framed certificates in responsive grid  
+- 🌐 OG tags for LinkedIn & Twitter previews  
+
+---
+
+## 🚀 Deployment
+This project is ready to deploy on:
+- **Vercel** → drag-and-drop folder or connect GitHub repo  
+- **Netlify** → upload folder or use `netlify deploy`  
+
+---
+
+## 📧 Contact
+**Vishal Bhatt**  
+📩 [veby009@gmail.com](mailto:veby009@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/vishal-bhatt-b0306718)  
+💻 [GitHub](https://github.com/veby009)
+
+---
+© 2025 Vishal Bhatt. All rights reserved.
+
