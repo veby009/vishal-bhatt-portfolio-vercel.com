@@ -52,7 +52,7 @@ CISO & Digital Transformation Strategist with 24+ years of experience in IT Gove
 ---
 
 ## 🌐 Live Website
-**[https://vb-secure-portfolio.vercel.app](https://vb-secure-portfolio.vercel.app)**
+**[[https://vb-secure-portfolio.vercel.app](https://veby009-vishal-bhatt-portfolio-verc.vercel.app/)])**https://veby009-vishal-bhatt-portfolio-verc.vercel.app/]
 
 ---
 
@@ -111,4 +111,5 @@ This project is ready to deploy on:
 
 ---
 © 2025 Vishal Bhatt. All rights reserved.
+
 
